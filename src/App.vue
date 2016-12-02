@@ -12,7 +12,7 @@
         <router-link to="/seller">商家</router-link>
       </div>
     </div>
-    <router-view></router-viem>
+    <router-view :seller="seller"></router-viem>
   </div>
 </template>
 
