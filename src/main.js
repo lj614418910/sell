@@ -24,6 +24,9 @@ const app = new Vue({
   el: '#app',
   template: '<App/>',
   components: { App },
-  router
+  router,
+  data: {
+   eventHub: new Vue()
+  }
 }).$mount('#app');
 router.push('/goods');
