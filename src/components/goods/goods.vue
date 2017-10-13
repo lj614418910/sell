@@ -48,7 +48,10 @@
   export default{
     props: {
       seller: {
-        type: Object
+        type: Object,
+        default() {
+          return {};
+        }
       }
     },
     data() {
@@ -93,7 +96,7 @@
           });
         };
       });
-      this.$root.eventHub.$on('cartAdd', (target) => {
+      this.$on('cartAdd', (target) => {
         this._drop(target);
       });
     },
