@@ -32,7 +32,7 @@
         } else {
           this.food.count ++;
         }
-        this.$root.eventHub.$emit('cartAdd', [event.target]);
+        this.$emit('cartAdd', [event.target]);
       },
       decreaseCart(event) {
         if (!event._constructed) {
